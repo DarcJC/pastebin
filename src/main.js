@@ -24,6 +24,9 @@ Prism.plugins.NormalizeWhitespace.setDefaults({
   'right-trim': true,
 });
 
+import Beian from "@/components/Beian";
+Vue.use(Beian);
+
 new Vue({
   router,
   render: h => h(App)

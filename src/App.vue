@@ -1,13 +1,17 @@
 <template>
   <div id="app">
+    <h1 class="logo">Bird's Pastebin</h1>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/publish">Publish</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+    <br/>
+    <beian/>
   </div>
 </template>
+
 
 <style>
 #app {
@@ -30,4 +34,15 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+h1.logo {
+  user-select: none;
+  font-size: 3rem;
+}
 </style>
+<script>
+import Beian from "@/components/Beian";
+export default {
+  components: {Beian}
+}
+</script>

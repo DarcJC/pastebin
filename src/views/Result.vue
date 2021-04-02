@@ -3,12 +3,9 @@
     <p>poster: {{ name }}</p>
     <br/><br/>
 
-    <p>enchanted:</p>
-    <pre><code :class="'language-'+type" ref="code">{{data}}</code></pre>
+    <p>code:</p>
+    <pre :class="'language-'+type" class="line-numbers"><code :class="'language-'+type" ref="code" v-html="html"></code></pre>
     <br/>
-
-    <p>highlighted:</p>
-    <span v-html="html" class="line-numbers"></span>
   </div>
 </template>
 

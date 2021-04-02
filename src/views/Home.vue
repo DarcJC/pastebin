@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <h1 class="logo">Bird's Pastebin</h1>
     <p>This site is intended for use as a short-term exchange of pasted information between parties.
       All submitted data is considered public information. Submitted data is not guaranteed to be permanent,
       and may be removed at any time. lease do not set up programs to send data to this site in an automated fashion;
@@ -16,9 +15,6 @@
 </template>
 
 <style scoped>
-  h1.logo {
-    user-select: none;
-  }
 
   div.home {
     max-width: 70rem;
